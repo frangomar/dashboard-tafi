@@ -1,11 +1,11 @@
 import React, {useState, useEffect} from "react";
 import ViewFirstUser from "./ViewFirstUser";
-import image from "../assets/images/avatarDefault.jpeg"
+
 
 
 function FirstUser() {
     let [user, setUser] = useState({
-        imagen:image,
+       
         nombre:"No hay usuarios",   
         categoria: "Esto no te lo mostrare porque es informacion sensible!"
     })

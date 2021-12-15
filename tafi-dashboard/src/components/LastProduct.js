@@ -1,11 +1,11 @@
 import React, {useState, useEffect} from "react";
 import ViewLastProduct from "./ViewLastProduct";
-import image from "../assets/images/tablaVector.png";
+
 import "../assets/css/LastProduct.css";
 
 function LastProduct() {
     let [product, setProduct] = useState({
-        imagen:image,
+        
         nombre:"No hay productos",  
         colores:["No hay colores"]
     })

@@ -1,5 +1,5 @@
 import React from 'react';
-import image from '../assets/images/logo.png';
+import image from '../assets/images/logo.svg';
 import "../assets/css/SideBar.css";
 
 import { 
@@ -28,7 +28,7 @@ function SideBar(){
                 <li className="nav-item active">
                     <a className="nav-link" href="/">
                         <i className="fas fa-fw fa-tachometer-alt"></i>
-                        <span><Link  to = '/Home'>Dashboard - BlueNami</Link></span></a>
+                        <span><Link  to = '/Home'>Dashboard - Tafi Dieteticas</Link></span></a>
                 </li>
 
                 {/*<!-- Divider -->*/}

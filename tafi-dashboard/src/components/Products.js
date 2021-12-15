@@ -11,8 +11,8 @@ class Products extends Component{
 		}
 	}
 
-	componentDidMount(){
-		fetch("/api/products")
+	useEffect(){
+		fetch("http://localhost:3001/api/products")
 		.then(res => res.json())
 		.then(products => {
 			this.setState({productsList: products.data})
@@ -37,10 +37,8 @@ class Products extends Component{
 											<th>Nombre</th>
 											<th>Descripcion</th>
 											<th>Precio</th>
-											<th>Marca</th>
-											<th>Unidades</th>
 											<th>Foto</th>
-											<th>Colores</th>
+											
 
 											</tr>
 										</thead>
@@ -54,11 +52,10 @@ class Products extends Component{
 														nombre={product.nombre}
 														descripcion={product.descripcion}
 														precio={product.precio}
-														marca={product.marca}
-														unidades={product.unidades}
+														
 														foto={product.foto}
 												
-														colores={product.colours}
+														
 
 													 key={i} />
 												

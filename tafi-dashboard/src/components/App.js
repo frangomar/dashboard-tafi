@@ -1,7 +1,7 @@
 import React from 'react';
 import SideBar from './SideBar';
 import Home from './Home.js';
-import Marcas from "./Marcas.js"
+
 import NotFound from './NotFound.js';
 import Products from "./Products.js";
 import {  BrowserRouter,  Routes,  Route,} from "react-router-dom";
@@ -26,7 +26,6 @@ function App() {
         <Routes>
         <Route path ='/' element={<Home/>}/>
       	<Route path ='/home' element={<Home/>}/>
-        <Route path="/marcas" element={<Marcas/>} />
         <Route path="/buscar" element={<SearchProducts/>} />
         <Route path ="/products" element={<Products/>}/>
         <Route path ="/users" element={<Users/>}/>

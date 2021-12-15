@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 import ViewProductDetail from "./ViewProductDetail";
-import image from "../assets/images/tablaVector.png"
+
 
 function ProductDetail(){    
     let [product, setProduct] = useState({
-        imagen: image,
+      
         nombre:"No hay productos",
         url: "/" ,
     })
